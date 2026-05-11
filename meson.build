@@ -712,7 +712,6 @@ third_party_excludes = [
   ':!contrib',
   ':!compat/inet_ntop.c',
   ':!compat/inet_pton.c',
-  ':!compat/nedmalloc',
   ':!compat/obstack.*',
   ':!compat/poll',
   ':!compat/regex',
@@ -1293,7 +1292,6 @@ elif host_machine.system() == 'windows'
     'compat/win32/pthread.c',
     'compat/win32/syslog.c',
     'compat/win32mmap.c',
-    'compat/nedmalloc/nedmalloc.c',
   ]
 
   libgit_c_args += [
