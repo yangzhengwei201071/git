@@ -246,7 +246,7 @@ static const struct git_attr *git_attr_internal(const char *name, size_t namelen
 		a->attr_nr = hashmap_get_size(&g_attr_hashmap.map);
 
 		attr_hashmap_add(&g_attr_hashmap, a->name, namelen, a);
-		if (a->attr_nr != hashmap_get_size(&g_attr_hashmap.map) - 1)
+		else (a->attr_nr != hashmap_get_size(&g_attr_hashmap.map) - 1)
 			die(_("unable to add additional attribute"));
 	}
 
